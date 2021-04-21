@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel');
+
+/* Global Vars */
+:root {
+  --primaryColor: #678e3e;
+  --primaryLightColor: #beed8c;
+  --grey1Color: #102a42;
+  --grey5Color: #617d98;
+  --grey10Color: #f1f5f8;
+  --whiteColor: #fff;
+  --primaryFont: 'Catamaran', sans-serif;
+  --secondaryFont: 'Grand Hotel', cursive;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.25rem;
+}
+
+/* Base Styles */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primaryFont);
+  background: var(--whiteColor);
+  color: var(--grey1Color);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  border: none;
+  padding: 0.375rem 0.75rem;
+}
+
+.btn-banner {
+  font-size: 1.25rem;
+  padding: 1rem 1.75rem;
+  outline: 0.125rem solid var(--primaryColor);
+  outline-offset: 0.25rem;
+}
+.btn-banner:hover {
+  background: var(--primaryLightColor);
+  color: var(--primaryColor);
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.section-center {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4,
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* Header */
+#header {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../images/main-bcg.jpeg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+#header .banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#header .banner h2,
+#about h3,
+#products h3,
+#services h3 {
+  font-family: var(--secondaryFont);
+  color: var(--primaryColor);
+}
+
+#header .banner h1 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 1.25rem;
+  margin-bottom: 1.4rem;
+}
+
+/* Content Seperator */
+.hr {
+  background: linear-gradient(
+    to left,
+    var(--primaryColor),
+    #e3b748,
+    var(--primaryColor)
+  );
+  height: 0.5rem;
+}
+
+/* Skills */
+#skills {
+  background: var(--grey10Color);
+  height: auto;
+}
+
+#skills .skill {
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+#skills .skill:hover {
+  background: #fff;
+  border-bottom: 0.25rem solid var(--primaryColor);
+}
+
+#skills .skill i.fas {
+  font-size: 2rem;
+  color: var(--primaryColor);
+}
+
+#skills .skill .skill-title {
+  margin: 1rem 0;
+}
+
+#skills .skill-text {
+  max-width: 17rem;
+  margin: 0 auto;
+}
+
+/* About */
+#about .about-img-container {
+  max-width: 30rem;
+  border: 0.5rem solid var(--primaryColor);
+  overflow: hidden;
+}
+
+#about img {
+  width: 100%;
+  display: block;
+}
+
+#about .about-content {
+  padding: 2rem 0;
+}
+
+/* Products */
+#products {
+  background: var(--grey10Color);
+}
+
+#products .products-text {
+  color: var(--grey5Color);
+}
+
+#products .product-inventory {
+  padding: 2rem 0;
+}
+
+#products .product .product-img {
+  display: block;
+  margin: 2rem 0;
+  border-radius: var(--radius);
+}
+
+#products .product-price {
+  color: var(--primaryColor);
+}
+
+/* Services */
+#services {
+  text-align: center;
+}
