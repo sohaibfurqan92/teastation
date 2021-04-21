@@ -32,6 +32,16 @@
     width: 50%;
   }
 
+  #products .products-desc {
+    float: left;
+    width: 30%;
+  }
+
+  #products .product-inventory {
+    float: right;
+    width: 70%;
+  }
+
   #products .product {
     float: left;
     width: 25%;
