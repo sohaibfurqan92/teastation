@@ -84,7 +84,7 @@ p {
   outline: 0.125rem solid var(--primaryColor);
   outline-offset: 0.25rem;
 }
-.btn-banner:hover {
+.btn:hover {
   background: var(--primaryLightColor);
   color: var(--primaryColor);
 }
@@ -240,4 +240,107 @@ p {
 /* Services */
 #services {
   text-align: center;
+}
+
+#services .our-services {
+  margin: 2rem 0;
+}
+
+#services .service-card {
+  background: var(--grey10Color);
+  margin: 2rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+#services .service-info {
+  text-align: center;
+  padding: 3rem 1rem 2.5rem 1rem;
+}
+
+#services .service-card .service-img-container {
+  position: relative;
+}
+
+#services .service-card .service-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 2rem;
+  color: var(--primaryColor);
+  background: var(--primaryLightColor);
+  padding: 0.25rem 0.6rem;
+  border-radius: 50%;
+  border: 0.375rem solid var(--grey10Color);
+  transform: translate(-50%, 50%);
+}
+
+#services .service-btn {
+  border-radius: var(--radius);
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+/* Contact */
+#contact {
+  background: var(--grey10Color);
+}
+
+#contact .contact-title {
+  color: var(--primaryColor);
+}
+
+#contact .contact-text {
+  text-transform: uppercase;
+}
+
+#contact .contact-form {
+  background: #fff;
+  text-align: center;
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  padding-bottom: 0;
+  margin: 2rem 0;
+}
+
+#contact .contact-form .input-fields {
+  margin-left: 0;
+  padding: 1rem;
+}
+
+#contact .contact-form h3 {
+  padding-top: 1.25rem;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--grey10Color);
+  border-radius: var(--radius);
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+#contact .contact-form .message {
+  height: 3rem;
+}
+
+#contact .contact-form button[type='submit'] {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem;
+  border-radius: var(--radius);
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  outline: 0.1rem solid #000;
 }

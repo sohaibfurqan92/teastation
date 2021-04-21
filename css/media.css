@@ -12,6 +12,12 @@
     width: 45%;
     margin: 0 1rem;
   }
+
+  #services .service-card {
+    float: left;
+    width: 45%;
+    margin: 0 1rem;
+  }
 }
 
 /* >768px styles */
@@ -46,5 +52,21 @@
     float: left;
     width: 25%;
     margin: 0 1rem;
+  }
+
+  #services .service-card {
+    float: left;
+    width: 30%;
+    text-align: center;
+  }
+
+  #contact .contact-details {
+    float: left;
+    width: 30%;
+  }
+
+  #contact .contact-form {
+    float: right;
+    width: 60%;
   }
 }
