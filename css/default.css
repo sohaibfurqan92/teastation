@@ -126,6 +126,17 @@ p {
   }
 }
 
+/* Nav Btn */
+#nav-btn {
+  font-size: 2.5rem;
+  color: var(--primaryColor);
+
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  z-index: 2;
+}
+
 /* Header */
 #header {
   text-align: center;
@@ -343,4 +354,34 @@ p {
 #contact .contact-form input:focus,
 #contact .contact-form textarea:focus {
   outline: 0.1rem solid #000;
+}
+
+/* Footer */
+#main-footer {
+  background: #222;
+  text-align: center;
+  color: #fff;
+}
+
+#main-footer .social {
+  margin-bottom: 1rem;
+}
+
+#main-footer i.fab {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+#main-footer i.fab:hover {
+  color: var(--primaryColor);
+}
+
+#main-footer p {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+
+#main-footer p span {
+  color: var(--primaryColor);
 }
