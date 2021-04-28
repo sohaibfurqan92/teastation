@@ -83,6 +83,7 @@ p {
   padding: 1rem 1.75rem;
   outline: 0.125rem solid var(--primaryColor);
   outline-offset: 0.25rem;
+  animation: scaleHeroBtn 4s ease-in-out;
 }
 .btn:hover {
   background: var(--primaryLightColor);
@@ -126,6 +127,81 @@ p {
   }
 }
 
+/* ------------------------------------------------------
+ANIMATION
+---------------------------------------------------------
+*/
+
+/* Nav Button Bounce */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hero section animations */
+/* Slide from right */
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translateX(200px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+/* Slide from left */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(300px);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translateX(-200px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+/* Scale Hero Btn */
+@keyframes scaleHeroBtn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  75% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Nav Btn */
 #nav-btn {
   font-size: 2.5rem;
@@ -135,6 +211,7 @@ p {
   top: 5%;
   left: 5%;
   z-index: 2;
+  animation: bounce 2s infinite;
 }
 
 /* Navbar */
@@ -201,6 +278,7 @@ p {
     url('../images/main-bcg.jpeg') no-repeat center center/cover;
   height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 
 #header .banner {
@@ -223,6 +301,11 @@ p {
   text-transform: uppercase;
   margin-top: 1.25rem;
   margin-bottom: 1.4rem;
+  animation: slideFromLeft 4s ease-in-out;
+}
+
+#header .banner h2 {
+  animation: slideFromRight 4s ease-in-out;
 }
 
 /* Content Seperator */
